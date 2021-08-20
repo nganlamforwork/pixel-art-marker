@@ -14,7 +14,9 @@ getVal.addEventListener('submit', function (event) {
 function makeGrid(row,column){
 
     const parent = document.querySelector('#pixelCanvas'); //Find the Canvas to draw table
-
+    
+    parent.innerHTML="";
+    
     for (var i=1; i<=row; i++){
 
         const newRow = document.createElement('tr');      //New Row
